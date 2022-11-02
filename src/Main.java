@@ -76,6 +76,20 @@ public class Main {
         System.out.println("Если спортсмен будет терять каждый день по 500 грамм, то на похудение уйдет " + resultOption2 + " дней");
         int averageResult = (resultOption1 + resultOption2) / 2;
         System.out.println("В среднем, может потребоваться " + averageResult + " дней, чтобы добиться результата похудения");
+        System.out.println("Задача 8");
+        int nowPaymentMasha = 67760;
+        int nowPaymentDenis = 83690;
+        int nowPaymentKristina = 76230;
+        float indexMonth = 0.1f;
+        int newPaymentMasha = (int) (nowPaymentMasha + (nowPaymentMasha * indexMonth));
+        int newPaymentDenis = (int) (nowPaymentDenis + (nowPaymentDenis * indexMonth));
+        int newPaymentKristina = (int) (nowPaymentKristina + (nowPaymentKristina * indexMonth));
+        int differenceMasha = (newPaymentMasha * 12) - (nowPaymentMasha * 12);
+        int differenceDenis = (newPaymentDenis * 12) - (nowPaymentDenis * 12);
+        int differenceKristina = (newPaymentKristina * 12) - (nowPaymentKristina * 12);
+        System.out.println("Маша теперь получает " + newPaymentMasha + " рублей. Годовой доход вырос на " + differenceMasha + " рублей.");
+        System.out.println("Денис теперь получает " + newPaymentDenis + " рублей. Годовой доход вырос на " + differenceDenis + " рублей.");
+        System.out.println("Кристина теперь получает " + newPaymentKristina + " рублей. Годовой доход вырос на " + differenceKristina + " рублей.");
 
     }
 }
